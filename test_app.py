@@ -1,11 +1,10 @@
+
 import unittest
-from app import mutiply
+from app import multiply  # make sure app.py has a function named multiply
 
-class TestApp(unittest.Testcase):
-
-
-  def test_mutiply(self):
-          self.assertequal(mutiply(3,4),12)
+class TestApp(unittest.TestCase):
+    def test_multiply(self):
+        self.assertEqual(multiply(3, 4), 12)
 
 if __name__ == "__main__":
-unittest.main()
+    unittest.main()
