@@ -7,5 +7,5 @@ class TestApp(unittest.Testcase):
   def test_mutiply(self):
           self.assertequal(mutiply(3,4),12)
 
-if name = "main":
+if __name__ == "__main__":
 unittest.main()
